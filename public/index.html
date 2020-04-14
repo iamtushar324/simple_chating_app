@@ -9,16 +9,34 @@
 
 <body>
 
-    <h1>Simple Chating App </h1>
+    <h1 id="head">Simple Chating App </h1>
 
-    <form action="login" method="post">
+    <div id="login">
         <label for="username">Username</label>
         <input type="text" name="username" id="username">
         <label for="username">password</label>
 
-        <input type="text" name="password" id="password">
-        <input type="submit" value="Login">
-    </form>
+        <input type="password" name="password" id="password">
+        <button id="login_btn">Login</button>
+    </div>
+
+    <div id="chatRoom" style="display: none;">
+        <label for="to">To :</label>
+        <input type="text" name="to" id="sendTo"><br><br>
+        <label for="msg">msg :</label>
+
+        <input type="text" name="msg" id="msg">
+        <button id="send_btn">Send</button>
+
+        <ul id="msg_list">
+            <h3>Messeages</h3>
+
+
+
+        </ul>
+
+
+    </div>
 
 </body>
 
